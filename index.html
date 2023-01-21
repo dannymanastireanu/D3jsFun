@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", content="width=device-width, initial-scale=1.0">
+    <title>Workload balance</title>
+    <style>
+    ul {
+      list-style: none;
+      display: flex; flex-wrap: wrap;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      display: inline-block;
+      padding: 5px;
+      margin: 5px;
+      background-color: #ddd;
+    }
+    #chart {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        height: 200px;
+    }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://d3js.org/d3.v7.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <p>Execution time for tests</p>
+    <ul id="list"></ul>
+    <br>
+    <div id="chart"></div>
+  </body>  
+</html>
